@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Lato-Black";
+src: url("../fonts/Lato-Black.woff") format("woff");
+src: url("../fonts/Lato-Black.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Lato-Light";
+src: url("../fonts/Lato-Light.woff") format("woff");
+src: url("../fonts/Lato-Light.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Lato_Bold";
+src: url("../fonts/Lato-Bold.woff") format("woff");
+src: url("../fonts/Lato-Bold.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Lato-Regular";
+src: url("../fonts/Lato-Regular.woff") format("woff");
+src: url("../fonts/Lato-Regular.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "MgOpenModataBold";
+src: url("../fonts/MgOpenModataBold.woff") format("woff");
+src: url("../fonts/MgOpenModataBold.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "MgOpenModataRegular";
+src: url("../fonts/MgOpenModataRegular.woff") format("woff");
+src: url("../fonts/MgOpenModataRegular.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "MyriadPro-Regular";
+src: url("../fonts/MyriadPro-Regular.woff") format("woff");
+src: url("../fonts/MyriadPro-Regular.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Raleway-Bold";
+src: url("../fonts/Raleway-Bold.ttf") format("ttf");    
+src: url("../fonts/Raleway-Bold.woff") format("woff");
+src: url("../fonts/Raleway-Bold.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Raleway-Medium";
+src: url("../fonts/Raleway-Medium.woff") format("woff");
+src: url("../fonts/Raleway-Medium.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Raleway-Regular";
+src: url("../fonts/Raleway-Regular.woff") format("woff");
+src: url("../fonts/Raleway-Regular.woff2") format("woff2");
+font-display: swap;
+}
+@font-face {
+    font-family: "Raleway-SemiBold";
+src: url("../fonts/Raleway-SemiBold.woff") format("woff");
+src: url("../fonts/Raleway-SemiBold.woff2") format("woff2");
+font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    box-sizing: border-box; /* чтобы  отступы считались внутрь */
+    position: relative;
+
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+.pnk {
+  color: #d11037;
+}
+.intro {
+  text-align: center;
+}
+.intro h2 {
+  font-family: "Raleway-Bold", sans-serif;
+  color: #181818;
+  font-size: 30px;
+  margin-top: 13.5vh;
+  margin-bottom: 5.5vh;
+}
+.intro p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.end-section {
+    width: 50%;
+    height: 1px;
+    background-color:  rgb(94, 94, 94);
+    margin-top: 13.5vh;
+
+}
+.hexagon-mini {
+    width: 15px;
+    height: 12px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: rgb(94, 94, 94);
+    position: relative;
+    left: 49%;
+    top: -5px;
+}
+.end-section-pink {
+    width: 50%;
+    height: 1px;
+    background-color:  #d11037;
+    margin-top: 14.3vh;
+
+}
+.hexagon-mini-pink {
+    width: 15px;
+    height: 12px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #d11037;
+    position: relative;
+    left: 49%;
+    top: -5px;
+}

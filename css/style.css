@@ -1,0 +1,455 @@
+@charset "UTF-8";
+@import "./settings.css";
+@import "./normalize.css";
+/* @import "./reset.css"; */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background-header {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  background-color: #09090d;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 105px;
+  background-color: #181818;
+  clip-path: polygon(100% 0, 100% 50%, 70% 100%, 30% 100%, 0% 50%, 0 0);
+}
+.logo p {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.navigation a {
+  color: #fff;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.navigation ul {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.navigation li {
+  display: flex;
+  align-items: center;
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
+}
+.navigation li:hover {
+  border-top: 2px solid #d11037;
+  border-bottom: 2px solid #d11037;
+  -webkit-filter: brightness(0%);
+  filter: none;
+}
+
+.home-page {
+  background-image: url("../media/images/woman-in-red.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.home-page .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.home-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-info h2 {
+  font-family: "Raleway-Bold", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 26vh;
+}
+.home-info p {
+  color: #fff;
+  font-family: sans-serif;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 5.5vh;
+  font-size: 15px;
+  line-height: 3.2vh;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  margin-top: 7.5vh;
+}
+.links a {
+  color: #fff;
+  font-family: "Raleway-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 19px;
+  width: 170px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #181818;
+}
+.links a:hover {
+  background-color: #d11037;
+}
+
+.about-creativia {
+  margin-bottom: 13.5vh;
+}
+.about-creativia .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-discription {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13.9vh;
+  width: 100%;
+  min-height: 360px;
+}
+
+.discription {
+  width: 49%;
+}
+.discription p {
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-family: sans-serif;
+  line-height: 3.2vh;
+}
+
+.switchs {
+  margin-bottom: 20px;
+}
+
+.hidden-info {
+  margin-top: 20px;
+}
+
+.checkbox {
+  visibility: hidden;
+  z-index: -20;
+}
+
+.checkbox + .checkbox-label ~ div {
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 70px;
+  font-size: 23px;
+}
+
+.checkbox-label::before,
+.checkbox-label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+.checkbox-label::before {
+  width: 40px;
+  height: 40px;
+  left: 0;
+  background-image: url("../media/images/icons/plus.png");
+  background-size: cover;
+}
+
+.checkbox-label::after {
+  width: 40px;
+  height: 40px;
+  left: 0px;
+  background-image: url("../media/images/icons/minus.png");
+  background-size: cover;
+  visibility: hidden;
+  z-index: -20;
+}
+
+.checkbox:checked + .checkbox-label::after {
+  visibility: visible;
+  z-index: 20;
+}
+
+.checkbox:checked + .checkbox-label::before {
+  visibility: hidden;
+  z-index: -20;
+}
+
+/* когда чекбокс активен показываем блоки с содержанием  */
+.checkbox:checked + .checkbox-label {
+  color: #d11037;
+}
+
+.checkbox:checked + .checkbox-label + div {
+  display: block;
+  background: #efefef;
+  padding: 10px;
+}
+
+.img-shell {
+  width: 49%;
+}
+
+.img-discription {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-man {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 5;
+  background-image: url("../media/images/about-creativia/man.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 430px;
+  height: 360px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.img-woman {
+  background-image: url("../media/images/about-creativia/woman.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 4%;
+  right: 0;
+  width: 375px;
+  height: 330px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+.img-woman:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 10;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  -webkit-filter: brightness(0%);
+  filter: none;
+}
+
+.img-man-in-glasses {
+  background-image: url("../media/images/about-creativia/man-in-glasses.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 4%;
+  left: 0;
+  width: 375px;
+  height: 330px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+.img-man-in-glasses:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 10;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  -webkit-filter: brightness(0%);
+  filter: none;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat-design-img {
+  background-image: url("../media/images/icons/hexagon-heart-off.png");
+  width: 92px;
+  height: 80px;
+}
+
+.flat-design-img:hover {
+  background-image: url("../media/images/icons/hexagon-heart-on.png");
+  margin-bottom: 4px;
+  width: 88px;
+  height: 76px;
+}
+
+.retina-ready-img {
+  background-image: url("../media/images/icons/hexagon-retina-off.png");
+  width: 92px;
+  height: 80px;
+}
+
+.retina-ready-img:hover {
+  background-image: url("../media/images/icons/hexagon-retina-on.png");
+  margin-bottom: 4px;
+  width: 88px;
+  height: 76px;
+}
+
+.responsive-img {
+  background-image: url("../media/images/icons/hexagon-responsive-off.png");
+  width: 92px;
+  height: 80px;
+}
+
+.responsive-img:hover {
+  background-image: url("../media/images/icons/hexagon-responsive-on.png");
+  margin-bottom: 4px;
+  width: 88px;
+  height: 76px;
+}
+
+.clean-useful-img {
+  background-image: url("../media/images/icons/hexagon-clean-usefull-off.png");
+  width: 92px;
+  height: 80px;
+}
+
+.clean-useful-img:hover {
+  background-image: url("../media/images/icons/hexagon-clean-usefull-on.png");
+  margin-bottom: 4px;
+  width: 88px;
+  height: 76px;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 23%;
+  margin-top: 14vh;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e5e5e;
+}
+
+.portfolio-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13.5vh;
+  margin-bottom: 10vh;
+}
+.portfolio-heading h2 {
+  color: #fff;
+  margin-bottom: 4.5vh;
+}
+.portfolio-heading ul {
+  margin: 0;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-heading a {
+  color: #b8b8b8;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.portfolio-heading a:hover {
+  color: #d11037;
+}
+
+.design-name {
+  width: 100%;
+  display: flex;
+}
+
+.money {
+  background-image: url("../media/images/portfolio-img/money.png");
+  width: 29%;
+  height: 250px;
+}
+
+.bank {
+  background-image: url("../media/images/portfolio-img/bank.png");
+  width: 21%;
+  height: 250px;
+}
+
+.money-tree {
+  background-image: url("../media/images/portfolio-img/money-tree.png");
+  width: 29%;
+  height: 250px;
+}
+
+.cards {
+  background-image: url("../media/images/portfolio-img/cards.png");
+  width: 21%;
+  height: 250px;
+}
+
+.calculator {
+  background-image: url("../media/images/portfolio-img/calculator.png");
+  width: 21%;
+  height: 250px;
+}
+
+.convert {
+  background-image: url("../media/images/portfolio-img/convert.png");
+  width: 29%;
+  height: 250px;
+}
+
+.purse {
+  background-image: url("../media/images/portfolio-img/purse.png");
+  width: 21%;
+  height: 250px;
+}
+
+.check-list {
+  background-image: url("../media/images/portfolio-img/check-list.png");
+  width: 29%;
+  height: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */
