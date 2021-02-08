@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Creativia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <section class="home-page">
@@ -31,8 +33,7 @@
                     <h2>why <span class="pnk">creativia?</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, </p>
                     <div class="links">
-                        <a href="#">features</a>
-                        <a href="#">free psd</a>
+                        <a href="#">features</a><a href="#">free psd</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +48,6 @@
                 <div class="discription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolore molestias minima, rem impedit accusamus veritatis cupiditate quidem quod et natus, voluptatibus cum laudantium quos atque consectetur labore perspiciatis. Accusantium.</p>
                     <div class="info">
                         <div class="switchs">
-                            
                             <input id="switch" class="checkbox" type="checkbox">
                             <label class="checkbox-label" for="switch">How is creativia?
                             </label>
@@ -117,34 +117,250 @@
             </ul>
         </div>
         <div class="design-name">
-            <div class="money"></div>
-            <div class="bank"></div>
-            <div class="money-tree"></div>
-            <div class="cards"></div>
+            <a class="money" href="#">
+                <img src="./media/images/portfolio-img/money.png" alt="money">
+                <p>design-name</p>
+            </a>
+            <a class="bank" href="#">
+                <img src="./media/images/portfolio-img/bank.png" alt="bank">
+                <p>design-name</p>
+            </a>
+            <a class="money-tree" href="#">
+                <img src="./media/images/portfolio-img/money-tree.png" alt="money-tree">
+                <p>design-name</p>
+            </a>
+            <a class="cards" href="#">
+                <img src="./media/images/portfolio-img/cards.png" alt="cards">
+                <p>design-name</p>
+            </a>
         </div>
-        <div class="design-name">
-            <div class="calculator"></div>
-            <div class="convert"></div>
-            <div class="purse"></div>
-            <div class="check-list"></div>
+        <div class="design-name" href="#">
+            <a class="calculator">
+                <img src="./media/images/portfolio-img/calculator.png" alt="calculator">
+                <p>design-name</p>
+            </a>
+            <a class="convert" href="#">
+                <img src="./media/images/portfolio-img/convert.png" alt="convert">
+                <p>design-name</p>
+            </a>
+            <a class="purse" href="#">
+                <img src="./media/images/portfolio-img/purse.png" alt="purse">
+                <p>design-name</p>
+            </a>
+            <a class="check-list" href="#">
+                <img src="./media/images/portfolio-img/check-list.png" alt="check-list">
+                <p>design-name</p>
+            </a>
         </div>
         <div class="end-section-pink">
             <div class="hexagon-mini-pink"></div>
         </div>
     </section>
-    <!-- <section class="our-clients">
+    <section class="our-product-features">
         <div class="wrapper">
             <div class="intro">
-                <h2>about <span class="pnk">creativia</span></h2>
+                <h2>our <span class="pnk">product features</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur<span class="pnk"> adipisicing elit</span>. Nobis maiores delectus laboriosam fuga, nulla libero, dolores enim aliquam sed, earum iure </p>
             </div>
+            <div class="choise-option">
+                <div class="choise-option-left">
+                    <div class="choise-left">
+                        <div class="choise-img"></div>
+                        <p>unlimited color options</p>
+                    </div>
+                    <div class="choise-left">
+                        <div class="choise-img"></div>
+                        <p>outstanding support</p>
+                    </div>
+                    <div class="choise-left">
+                        <div class="choise-img"></div>
+                        <p>retina ready</p>
+                    </div>
+                </div>
+                <div class="choise-send">
+                    <img src="./media/images/woman-in-red-in-app.png" alt="">
+                    <a href="#"> free psd</a>
+                </div>
+                <div class="choise-option-right">
+                    <div class="choise-right">
+                        <div class="choise-img"></div>
+                        <p>unlimited color options</p>
+                    </div>
+                    <div class="choise-right">
+                        <div class="choise-img"></div>
+                        <p>outstanding support</p>
+                    </div>
+                    <div class="choise-right">
+                        <div class="choise-img"></div>
+                        <p>retina ready</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
+    <section class="our-clients">
+        <div class="our-clients-bcgr"></div>
+            <div class="wrapper">
+                <div class="intro-light">
+                    <h2>our <span class="pnk">clients</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur<span class="pnk"> adipisicing elit</span>. Nobis maiores delectus laboriosam fuga, nulla libero, dolores enim aliquam sed, earum iure </p>
+                </div>
+                <div class="reviews">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h4>happy client say</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat consequuntur iste dignissimos aliquam fuga</p>
+                                <img class="john-doe-slider" src="./media/images/our-clients/john-doe.jpg" alt="john-doe">
+                                <p class="pnk">john-doe</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4>happy client say</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat consequuntur iste dignissimos aliquam fuga</p>
+                                <img class="bruce-wayne-slider" src="./media/images/our-clients/bruce-wayne.jpg" alt="bruce-wayne">
+                                <p class="pnk">bruce-wayne</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4>happy client say</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat consequuntur iste dignissimos aliquam fuga</p>
+                                <img class="john-doe-slider" src="./media/images/our-clients/john-doe.jpg" alt="john-doe">
+                                <p class="pnk">john-doe</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="happy-client-icons">
+                        <a class="graphicriver" href="#">
+                            <img src="./media/images/our-clients/graphicriver-light.png" alt="graphicriver">
+                        </a>
+                        <a class="videohive" href="#">
+                            <img src="./media/images/our-clients/videohive-light.png" alt="videohive">
+                        </a>
+                        <a class="photodune" href="#">
+                            <img src="./media/images/our-clients/photodune-light.png" alt="photodune">
+                        </a>
+                        <a class="codeconyon" href="#">
+                            <img src="./media/images/our-clients/codecanyon-light.png" alt="codecanyon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    <section class="our-teamwork">
+        <div class="wrapper">
+            <div class="intro">
+                <h2>our <span class="pnk">teamwork</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur<span class="pnk"> adipisicing elit</span>. Nobis maiores delectus laboriosam fuga, nulla libero, dolores enim aliquam sed, earum iure </p>
+            </div>
+            <div class="team">
+                <div class="team-members">
+                    <div class="social-groups">
+                        <a class="fb-icon" href="#">
+                            <img src="./media/images/icons/facebook-icon.png" alt="">
+                        </a>
+                        <a class="twitter-icon" href="#">
+                            <img src="./media/images/icons/twitter-icon.png" alt="">
+                        </a>
+                        <a class="google-icon" href="#">
+                            <img src="./media/images/icons/google-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="bruce-wayne"></div>
+                    <h3>bruce wayne</h3>
+                    <p>Webdesigner</p>
+                </div>
+                <div class="team-members">
+                    <div class="social-groups">
+                        <a class="fb-icon" href="#">
+                            <img src="./media/images/icons/facebook-icon.png" alt="">
+                        </a>
+                        <a class="twitter-icon" href="#">
+                            <img src="./media/images/icons/twitter-icon.png" alt="">
+                        </a>
+                        <a class="google-icon" href="#">
+                            <img src="./media/images/icons/google-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="amr-srour"></div>
+                    <h3>amr srour</h3>
+                    <p>Webdesigner</p>
+                </div>
+                <div class="team-members">
+                    <div class="social-groups">
+                        <a class="fb-icon" href="#">
+                            <img src="./media/images/icons/facebook-icon.png" alt="">
+                        </a>
+                        <a class="twitter-icon" href="#">
+                            <img src="./media/images/icons/twitter-icon.png" alt="">
+                        </a>
+                        <a class="google-icon" href="#">
+                            <img src="./media/images/icons/google-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sarah-doe"></div>
+                    <h3>sarah doe</h3>
+                    <p>Webdesigner</p>
+                </div>
+                <div class="team-members">
+                    <div class="social-groups">
+                        <a class="fb-icon" href="#">
+                            <img src="./media/images/icons/facebook-icon.png" alt="">
+                        </a>
+                        <a class="twitter-icon" href="#">
+                            <img src="./media/images/icons/twitter-icon.png" alt="">
+                        </a>
+                        <a class="google-icon" href="#">
+                            <img src="./media/images/icons/google-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="john-de"></div>
+                    <h3>john de</h3>
+                    <p>Webdesigner</p>
+                </div>
+            </div>
+            <div class="end-section">
+                <div class="hexagon-mini"></div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="our-skills">
+        <div class="wrapper">
+            <div class="intro">
+                <h2>our <span class="pnk">skills</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur<span class="pnk"> adipisicing elit</span>. Nobis maiores delectus laboriosam fuga, nulla libero, dolores enim aliquam sed, earum iure </p>
+            </div>
+            <div class="skills">
+                <div>
+
+                    <h3>photoshop</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div>
+
+                    <h3>html</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div>
+
+                    <h3>php</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div>
+                    
+                    <h3>wordpress</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Подключаем jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- подключаем slickslider -->
-    <script src="./js/slick.min.js"></script>
+    <!-- подключаем swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- подключаем js -->
     <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
     </body>
 </html>

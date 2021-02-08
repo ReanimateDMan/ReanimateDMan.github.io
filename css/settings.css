@@ -1,74 +1,76 @@
 @font-face {
     font-family: "Lato-Black";
-src: url("../fonts/Lato-Black.woff") format("woff");
-src: url("../fonts/Lato-Black.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Lato-Black.woff") format("woff");
+    src: url("../fonts/Lato-Black.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Lato-Light";
-src: url("../fonts/Lato-Light.woff") format("woff");
-src: url("../fonts/Lato-Light.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Lato-Light.woff") format("woff");
+    src: url("../fonts/Lato-Light.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
-    font-family: "Lato_Bold";
-src: url("../fonts/Lato-Bold.woff") format("woff");
-src: url("../fonts/Lato-Bold.woff2") format("woff2");
-font-display: swap;
+    font-family: "Lato-Bold";
+    src: url("../fonts/Lato-Bold.woff") format("woff");
+    src: url("../fonts/Lato-Bold.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Lato-Regular";
-src: url("../fonts/Lato-Regular.woff") format("woff");
-src: url("../fonts/Lato-Regular.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Lato-Regular.woff") format("woff");
+    src: url("../fonts/Lato-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "MgOpenModataBold";
-src: url("../fonts/MgOpenModataBold.woff") format("woff");
-src: url("../fonts/MgOpenModataBold.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/MgOpenModataBold.woff") format("woff");
+    src: url("../fonts/MgOpenModataBold.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "MgOpenModataRegular";
-src: url("../fonts/MgOpenModataRegular.woff") format("woff");
-src: url("../fonts/MgOpenModataRegular.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/MgOpenModataRegular.woff") format("woff");
+    src: url("../fonts/MgOpenModataRegular.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "MyriadPro-Regular";
-src: url("../fonts/MyriadPro-Regular.woff") format("woff");
-src: url("../fonts/MyriadPro-Regular.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/MyriadPro-Regular.woff") format("woff");
+    src: url("../fonts/MyriadPro-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Raleway-Bold";
-src: url("../fonts/Raleway-Bold.ttf") format("ttf");    
-src: url("../fonts/Raleway-Bold.woff") format("woff");
-src: url("../fonts/Raleway-Bold.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Raleway-Bold.ttf") format("ttf");    
+    src: url("../fonts/Raleway-Bold.woff") format("woff");
+    src: url("../fonts/Raleway-Bold.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Raleway-Medium";
-src: url("../fonts/Raleway-Medium.woff") format("woff");
-src: url("../fonts/Raleway-Medium.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Raleway-Medium.woff") format("woff");
+    src: url("../fonts/Raleway-Medium.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Raleway-Regular";
-src: url("../fonts/Raleway-Regular.woff") format("woff");
-src: url("../fonts/Raleway-Regular.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Raleway-Regular.woff") format("woff");
+    src: url("../fonts/Raleway-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: "Raleway-SemiBold";
-src: url("../fonts/Raleway-SemiBold.woff") format("woff");
-src: url("../fonts/Raleway-SemiBold.woff2") format("woff2");
-font-display: swap;
+    src: url("../fonts/Raleway-SemiBold.woff") format("woff");
+    src: url("../fonts/Raleway-SemiBold.woff2") format("woff2");
+    font-display: swap;
 }
 
 a {
     text-decoration: none;
-    
+}
+p {
+    font-family: "Lato-Regular", sans-serif;
 }
 .wrapper {
     margin-left: auto;
@@ -87,24 +89,44 @@ h2 {
     margin: 0;
 }
 .pnk {
-  color: #d11037;
+    color: #d11037;
 }
 .intro {
-  text-align: center;
+    margin-top: 13.5vh;
+    text-align: center;
 }
 .intro h2 {
-  font-family: "Raleway-Bold", sans-serif;
-  color: #181818;
-  font-size: 30px;
-  margin-top: 13.5vh;
-  margin-bottom: 5.5vh;
+    font-family: "Raleway-Bold", sans-serif;
+    color: #181818;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5.5vh;
 }
 .intro p {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.intro-light {
+    text-align: center;
+    margin-top: 13.5vh;
+    margin-bottom: 10vh;
+}
+.intro-light h2 {
+    font-family: "Raleway-Bold", sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5.5vh;
+}
+.intro-light p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
 }
 .end-section {
+    position: relative;
     width: 50%;
     height: 1px;
     background-color:  rgb(94, 94, 94);
@@ -116,11 +138,13 @@ h2 {
     height: 12px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-color: rgb(94, 94, 94);
-    position: relative;
+    position: absolute;
+    z-index: 10;
     left: 49%;
     top: -5px;
 }
 .end-section-pink {
+    position: relative;
     width: 50%;
     height: 1px;
     background-color:  #d11037;
@@ -132,7 +156,8 @@ h2 {
     height: 12px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-color: #d11037;
-    position: relative;
+    position: absolute;
+    z-index: 10;
     left: 49%;
     top: -5px;
 }
