@@ -65,7 +65,6 @@
     src: url("../fonts/Raleway-SemiBold.woff2") format("woff2");
     font-display: swap;
 }
-
 a {
     text-decoration: none;
 }
@@ -93,6 +92,7 @@ h2 {
 }
 .intro {
     margin-top: 13.5vh;
+    margin-bottom: 13.5vh;
     text-align: center;
 }
 .intro h2 {
@@ -106,6 +106,7 @@ h2 {
     margin: 0;
     font-size: 18px;
     font-weight: 600;
+    color: #5c5c5c;
 }
 .intro-light {
     text-align: center;

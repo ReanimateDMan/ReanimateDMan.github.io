@@ -10,3 +10,10 @@ var swiper = new Swiper('.swiper-container', {
   },
   speed: 1200,
 });
+var mySwiper2 = new Swiper('.swiper-container2', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+});
